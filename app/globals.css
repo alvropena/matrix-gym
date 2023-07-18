@@ -16,7 +16,7 @@
   }
 
   .navbar .links a {
-    @apply text-white hover:text-yellow-500;
+    @apply text-white hover: text-yellow-500;
   }
 
   .navbar .links button {
@@ -29,7 +29,7 @@
   }
 
   .footer {
-    @apply flex justify-between items-start py-4 px-6 bg-gray-800 text-white;
+    @apply flex justify-between items-start py-4 px-6 bg-black text-white;
   }
 
   .footer .footer-col {
@@ -42,5 +42,13 @@
 
   .footer .social-icons {
     @apply flex gap-2;
+  }
+
+  .login_button {
+    @apply mt-1 px-4 py-2 w-full border-2 border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500;
+  }
+
+  .login_text {
+    @apply block text-sm font-medium text-gray-700
   }
 }

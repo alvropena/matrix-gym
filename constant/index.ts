@@ -6,15 +6,9 @@ export const NavLinks = [
 
 export const Subscriptions = [
   {
-    key: "Anual",
-    body: "Suscríbete a nuestro plan anual",
-    price: 20,
-    href: "/",
-  },
-  {
-    key: "Semestral",
-    body: "Suscríbete a nuestro plan semestral",
-    price: 40,
+    key: "Mensual",
+    body: "Suscríbete a nuestro plan mensual",
+    price: 80,
     href: "/",
   },
   {
@@ -24,9 +18,15 @@ export const Subscriptions = [
     href: "/",
   },
   {
-    key: "Mensual",
-    body: "Suscríbete a nuestro plan mensual",
-    price: 80,
+    key: "Semestral",
+    body: "Suscríbete a nuestro plan semestral",
+    price: 40,
+    href: "/",
+  },
+  {
+    key: "Anual",
+    body: "Suscríbete a nuestro plan anual",
+    price: 20,
     href: "/",
   },
 ];
@@ -55,6 +55,20 @@ export const Locations = [
   },
   {
     key: "San Isidro",
+    address: "Av. Alonso de Molina 1012",
+    postcode: "Lima, Lima 15026",
+    photo: "https://via.placeholder.com/600/24f355",
+    href: "/",
+  },
+  {
+    key: "Punta Hermosa",
+    address: "Av. San Felipe 201",
+    postcode: "Lima, Lima 15025",
+    photo: "https://via.placeholder.com/600/24f355",
+    href: "/",
+  },
+  {
+    key: "San Bartolo",
     address: "Av. Alonso de Molina 1012",
     postcode: "Lima, Lima 15026",
     photo: "https://via.placeholder.com/600/24f355",

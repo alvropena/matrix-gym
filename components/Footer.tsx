@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Footer = () => {
@@ -7,12 +8,11 @@ const Footer = () => {
         <div className="logo">Matrix Gym</div>
         <div>Síguenos</div>
         <div className="social-icons">
-          {/* Replace these with your actual icons */}
-          <span>Facebook</span>
-          <span>Instagram</span>
-          <span>Twitter</span>
-          <span>YouTube</span>
-          <span>TikTok</span>
+          {/* <FontAwesomeIcon icon="fa-brands fa-facebook" />
+          <FontAwesomeIcon icon="fa-brands fa-instagram" />
+          <FontAwesomeIcon icon="fa-brands fa-twitter" />
+          <FontAwesomeIcon icon="fa-brands fa-youtube" />
+          <FontAwesomeIcon icon="fa-brands fa-youtube" /> */}
         </div>
         <div>Todos los derechos reservados 2021 / Bodytech Corp</div>
         <div>Colombia Peru Chile</div>

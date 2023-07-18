@@ -16,14 +16,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col min-h-screen">
         <NavBar />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer />
-        <div className="fixed bottom-0 w-full bg-yellow-500 text-black text-center p-6 ">
-          ¡Empieza a entrenar hoy! Aprovecha nuestras promociones
-          <button>
-            <p>Matricularme</p>
+        <div className="fixed bottom-0 w-full bg-yellow-500 text-black p-6 flex items-center justify-between z-50">
+          <div>
+          <span className="font-bold">¡Empieza a entrenar hoy!</span>
+          <span className="ml-1">Aprovecha nuestras promociones.</span>
+          </div>
+          <button
+            type="button"
+            // onClick={() => {}}
+            className="bg-black text-yellow-500 px-4 py-2 rounded-md"
+          >
+            Matricularme
           </button>
         </div>
       </body>
