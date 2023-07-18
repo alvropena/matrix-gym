@@ -2,26 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .navbar {
+    @apply flex justify-between items-center py-3 px-4 bg-gray-800 text-white;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .navbar .logo {
+    @apply text-xl font-bold;
+  }
+
+  .navbar .links {
+    @apply flex gap-4;
+  }
+
+  .navbar .links a {
+    @apply text-white hover:text-yellow-500;
+  }
+
+  .navbar .links button {
+    @apply py-2 px-4 bg-orange-500 text-white rounded-lg;
+    transition: background-color 0.2s;
+  }
+
+  .navbar .links .login-btn {
+    @apply bg-blue-500;
+  }
+
+  .footer {
+    @apply flex justify-between items-start py-4 px-6 bg-gray-800 text-white;
+  }
+
+  .footer .footer-col {
+    @apply flex flex-col gap-2;
+  }
+
+  .footer .logo {
+    @apply text-xl font-bold;
+  }
+
+  .footer .social-icons {
+    @apply flex gap-2;
+  }
 }
